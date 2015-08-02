@@ -20,6 +20,13 @@ To start the image, please us the following command
 ```
 docker run --link jon:jon  -d psteiner/managed_eap
 ```
+OR Below..to give the container a specfic name and  make sure container does not exit, when EAP shutdown is called.
+
+To start the image, please us the following command
+```
+docker run -i -t -h managed_eap1 --name managed_eap1 --link jon:jon  -d psteiner/managed_eap
+```
+
 
 This will do the following things:
 
